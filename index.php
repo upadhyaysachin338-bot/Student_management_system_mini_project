@@ -1,3 +1,6 @@
 <?php
-echo "Student Management System";
+
+header("Location: login.php");
+exit;
+
 ?>
