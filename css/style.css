@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+} 
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.student-count {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+}
+
+.actions a {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+}
+
+.logout-btn {
+    background-color: #dc2626;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+}
+
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.course-table th, .course-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.course-table th {
+    background-color: #2563eb;
+    color: white;
+}
+
+.actions a:hover {
+    background-color: #1d4ed8;
+}
+
+.logout-btn:hover {
+    background-color: #b91c1c;
+}
+
+.course-table tr:hover {
+    background-color: #f1f5f9;
+}
+
+.header-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.dashboard-btn, .add-btn {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+}
+
+.dashboard-btn:hover, .add-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.search-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.search-form input {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.search-form button,
+.show-all-btn {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.search-form button {
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+}
+
+.show-all-btn {
+    background-color: #6b7280;
+    color: white;
+}
+
+.search-form button:hover {
+    background-color: #1d4ed8;
+}
+
+.show-all-btn:hover {
+    background-color: #4b5563;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.student-table th,
+.student-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.student-table th {
+    background-color: #2563eb;
+    color: white;
+}
+
+.student-table tr:hover {
+    background-color: #f1f5f9;
+}
+
+.action-cell {
+    white-space: nowrap;
+}
+
+.edit-btn,
+.delete-btn {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.edit-btn {
+    background-color: #16a34a;
+}
+
+.delete-btn {
+    background-color: #dc2626;
+}
+
+.edit-btn:hover {
+    background-color: #15803d;
+}
+
+.delete-btn:hover {
+    background-color: #b91c1c;
+}
+
+/* Student Form */
+
+.form-container {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.form-header p {
+    margin-top: 5px;
+    color: #6b7280;
+}
+
+.back-btn {
+    background-color: #6b7280;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+.student-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group > label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group input[type="number"],
+.form-group select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: normal;
+}
+
+.submit-btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.back-btn:hover {
+    background-color: #4b5563;
+}
+
+.success-message {
+    background-color: #dcfce7;
+    color: #166534;
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    background-color: #fee2e2;
+    color: #991b1b;
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.delete-form {
+    display: inline;
+}
+
+.delete-btn {
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+}
+
+/* Login Page */
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 90%;
+    max-width: 400px;
+    background-color: white;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.login-group {
+    margin-bottom: 20px;
+}
+
+.login-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.login-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.login-btn {
+    width: 100%;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 11px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.login-error {
+    background-color: #fee2e2;
+    color: #991b1b;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-align: center;
+}
