@@ -1,4 +1,4 @@
-Student Management System:
+**Student Management System:**
 
 A simple and user-friendly **Student Management System** built using **PHP and MySQL**. The system provides an admin panel for managing student records efficiently through a web-based interface.
 
